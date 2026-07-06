@@ -78,6 +78,21 @@ npx playwright show-report
 └── README.md
 ```
 
+## Current Learning Focus
+
+This repository currently includes beginner-friendly examples for:
+- basic Playwright test structure
+- test annotations and browser context configuration
+- multiple pages and multiple browser contexts
+- locators and common commands
+- assertions and reporting
+
+You can run a specific test file like this:
+
+```bash
+npx playwright test tests/02_first_tests/237_BCP_Test_Options.spec.ts --headed
+```
+
 ## Notes
 
 This repository is intended as a beginner-friendly starting point for learning Playwright concepts such as:
@@ -86,3 +101,4 @@ This repository is intended as a beginner-friendly starting point for learning P
 - assertions
 - test configuration
 - generating reports
+- working with Playwright reports and test artifacts
