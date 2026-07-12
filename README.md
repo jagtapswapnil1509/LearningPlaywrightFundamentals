@@ -9,6 +9,10 @@ The project includes:
 - Example browser tests
 - HTML test report output
 - Basic setup for running tests in Chromium, Firefox, and WebKit
+- Locator and command practice tests in `tests/03_Locators_Commands/`
+  - `229_Project_VWO_Login.spec.ts` for VWO login locator verification
+  - `238_Locator_stratergy.spec.ts` for locator strategy examples
+  - `240_xpath.spec.ts` for XPath locator examples
 
 ## Prerequisites
 
