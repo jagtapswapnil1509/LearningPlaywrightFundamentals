@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "type": "module",
+  "scripts": {
+    "test:custom-reporter": "playwright test --project=chromium --reporter=line,./utils/CustomReporter.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.61.1",
-    "@types/node": "^26.1.0"
+    "@types/node": "^26.1.0",
+    "allure-playwright": "^3.10.2"
   }
 }
