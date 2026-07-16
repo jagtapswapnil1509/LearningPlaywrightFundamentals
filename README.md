@@ -49,6 +49,24 @@ Open the HTML report after a run:
 npx playwright show-report
 ```
 
+## Custom HTML Reporter
+
+The project also includes a custom HTML reporter implemented in `utils/CustomReporter.ts`.
+
+Run the sample reporter-driven test with:
+
+```bash
+npx playwright test tests/05_Allure_Reporting/249_TestVWODashboard_CustomReporter.spec.ts --project=chromium --reporter=line,./utils/CustomReporter.ts
+```
+
+This generates an HTML report under the `tta-report/` folder. Open the latest report with:
+
+```bash
+start tta-report/index.html
+```
+
+The sample test file uses structured steps, tags, and screenshots so the custom report includes richer evidence for each execution.
+
 ## Project Structure
 
 ```text
