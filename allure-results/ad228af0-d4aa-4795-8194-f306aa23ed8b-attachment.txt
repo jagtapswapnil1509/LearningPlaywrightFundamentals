@@ -1,0 +1,7 @@
+locator('table[summary=\'Sample Table\'] tbody tr')
+4
+Row $(i+1): [ 'UAE', 'Dubai', '829m', '2010', '1', '\n' ]
+Row $(i+1): [ 'Saudi Arabia', 'Mecca', '601m', '2012', '2', '\n' ]
+Row $(i+1): [ 'Taiwan', 'Taipei', '509m', '2004', '3', '\n' ]
+Row $(i+1): [ 'China', 'Shanghai', '492m', '2008', '4', '\n' ]
+Row $(i+1): []

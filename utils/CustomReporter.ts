@@ -1,7 +1,7 @@
 /**
- * Custom TTA Reporter for Playwright
- * @author Pramod Dutta
- * @website https://thetestingacademy.com
+ * Custom Reporter for Playwright
+ * @author Swapnil Jagtap
+ * @website 
  * @version 1.0.0
  * @license : MIT
  * @description Custom HTML Reporter for Playwright Test Automation Framework

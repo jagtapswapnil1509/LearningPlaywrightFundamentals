@@ -1,0 +1,7 @@
+locator('table[summary=\'Sample Table\'] tbody tr')
+4
+Row $(i+1),rowdata
+Row $(i+1),rowdata
+Row $(i+1),rowdata
+Row $(i+1),rowdata
+Row $(i+1),rowdata
