@@ -1,37 +1,37 @@
 # Learning Playwright Fundamentals
 
-This repository contains a small Playwright test project for learning the fundamentals of browser automation and end-to-end testing.
+This repository is a hands-on Playwright learning project built with TypeScript. It contains a growing set of end-to-end test examples that cover the core concepts of browser automation, element interaction, assertions, and reporting.
 
-## Project Overview
+## What this project covers
 
-The project includes:
-- Playwright test configuration
-- Example browser tests
-- HTML test report output
-- Basic setup for running tests in Chromium, Firefox, and WebKit
-- Comprehensive test examples organized by category:
-  - **01_Basics/**: Basic test structure and annotations
-  - **02_first_tests/**: Browser context, page, and configuration setup
-  - **03_Locators_Commands/**: Locator strategies, navigation, and Playwright commands
-  - **04_Session_Storage/** through **23_Advance_Framework/**: Advanced testing patterns
+The examples in this repository are organized by topic and include:
+- basic Playwright test structure and annotations
+- browser context and page configuration
+- locator strategies and common commands
+- assertions and waits
+- handling alerts, frames, and shadow DOM
+- file upload and download scenarios
+- keyboard, hover, drag-and-drop interactions
+- web tables and dynamic content
+- reporting with Playwright and custom HTML reporting
 
 ## Prerequisites
 
-Make sure you have the following installed:
-- Node.js (recommended: v18 or newer)
+Make sure the following tools are installed:
+- Node.js 18 or newer
 - npm
 
 ## Installation
 
-Install the project dependencies:
+Install dependencies from the repository root:
 
 ```bash
 npm install
 ```
 
-## Running Tests
+## Running tests
 
-Run the test suite:
+Run the full suite:
 
 ```bash
 npx playwright test
@@ -49,25 +49,19 @@ Open the HTML report after a run:
 npx playwright show-report
 ```
 
-## Custom HTML Reporter
+## Custom reporting
 
 The project also includes a custom HTML reporter implemented in `utils/CustomReporter.ts`.
 
-Run the sample reporter-driven test with:
+Run the reporter-driven example with:
 
 ```bash
 npx playwright test tests/05_Allure_Reporting/249_TestVWODashboard_CustomReporter.spec.ts --project=chromium --reporter=line,./utils/CustomReporter.ts
 ```
 
-This generates an HTML report under the `tta-report/` folder. Open the latest report with:
+This generates reports under the `tta-report/` folder.
 
-```bash
-start tta-report/index.html
-```
-
-The sample test file uses structured steps, tags, and screenshots so the custom report includes richer evidence for each execution.
-
-## Project Structure
+## Project structure
 
 ```text
 .
@@ -98,30 +92,15 @@ The sample test file uses structured steps, tags, and screenshots so the custom 
 │   └── Projects/
 ├── playwright.config.ts
 ├── package.json
+├── utils/
 └── README.md
-```
-
-## Current Learning Focus
-
-This repository currently includes beginner-friendly examples for:
-- basic Playwright test structure
-- test annotations and browser context configuration
-- multiple pages and multiple browser contexts
-- locators and common commands
-- assertions and reporting
-
-You can run a specific test file like this:
-
-```bash
-npx playwright test tests/02_first_tests/237_BCP_Test_Options.spec.ts --headed
 ```
 
 ## Notes
 
-This repository is intended as a beginner-friendly starting point for learning Playwright concepts such as:
+This repository is intended to be a beginner-friendly starting point for learning Playwright concepts such as:
 - navigating pages
 - locating elements
-- assertions
-- test configuration
-- generating reports
-- working with Playwright reports and test artifacts
+- working with assertions and waits
+- configuring tests and browsers
+- producing reports and test artifacts
