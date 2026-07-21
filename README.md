@@ -27,6 +27,7 @@ Install dependencies from the repository root:
 
 ```bash
 npm install
+npx playwright install
 ```
 
 ## Running tests
