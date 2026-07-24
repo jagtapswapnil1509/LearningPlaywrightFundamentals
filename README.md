@@ -38,6 +38,14 @@ Run the full suite:
 npx playwright test
 ```
 
+Run a specific test file:
+
+```bash
+npx playwright test tests/11_JS_Alerts/270_Jsalert.spec.ts
+```
+
+This repository also includes practice and learning examples for alerts, frames, keyboard interactions, file upload/download flows, and custom reporting.
+
 Run tests in headed mode:
 
 ```bash
