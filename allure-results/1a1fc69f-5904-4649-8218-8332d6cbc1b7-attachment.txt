@@ -1,0 +1,22 @@
+6
+3
+[ 'Google' ]
+[ 'Maria Anders' ]
+[ 'Germany' ]
+[ 'Meta' ]
+[ 'Francisco Chang' ]
+[ 'Mexico' ]
+[ 'Microsoft' ]
+[ 'Roland Mendel' ]
+[ 'Austria' ]
+[ 'Island Trading' ]
+[ 'Helen Bennett' ]
+[ 'UK' ]
+[ 'Adobe' ]
+[ 'Yoshi Tannamuri' ]
+text match
+Canada
+[ 'Canada' ]
+[ 'Amazon' ]
+[ 'Giovanni Rovelli' ]
+[ 'Italy' ]

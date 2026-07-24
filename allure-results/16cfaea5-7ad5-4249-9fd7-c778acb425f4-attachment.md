@@ -1,0 +1,1229 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Practice\practice6.spec.ts >> verify Drop down selection
+- Location: tests\Practice\practice6.spec.ts:3:1
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('//div[@class=\'css-1dbjc4n r-19yat4t r-1rt2jqs\']').filter({ hasText: 'Bengaluru' }).first()
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e8]:
+          - link "sjlady" [ref=e11] [cursor=pointer]:
+            - /url: ""
+            - img "sjlady" [ref=e13]
+          - link "sjlady" [ref=e16] [cursor=pointer]:
+            - /url: https://corporate.spicejet.com/SpiceMax.aspx
+            - img "sjlady" [ref=e18]
+          - link "sjlady" [ref=e21] [cursor=pointer]:
+            - /url: https://corporate.spicejet.com/VisaServices.aspx
+            - img "sjlady" [ref=e23]
+          - link [ref=e26] [cursor=pointer]:
+            - /url: https://spiceclub.spicejet.com/axisBank
+        - generic [ref=e27]:
+          - button [ref=e28] [cursor=pointer]
+          - button [ref=e29] [cursor=pointer]
+          - button [ref=e30] [cursor=pointer]
+          - button [ref=e31] [cursor=pointer]
+      - generic [ref=e34]:
+        - generic [ref=e38]:
+          - generic [ref=e40]:
+            - generic [ref=e41] [cursor=pointer]:
+              - generic [ref=e42]: Add-ons
+              - img [ref=e44]
+            - generic:
+              - img [ref=e47] [cursor=pointer]
+              - generic [ref=e52] [cursor=pointer]:
+                - generic [ref=e54]:
+                  - link "SpiceMax" [ref=e55]:
+                    - /url: https://corporate.spicejet.com/SpiceMax.aspx
+                    - generic [ref=e57]: SpiceMax
+                  - link "SpiceCafé" [ref=e58]:
+                    - /url: https://corporate.spicejet.com/spiceCafe.aspx
+                    - generic [ref=e60]: SpiceCafé
+                - generic [ref=e62]:
+                  - link "You1st" [ref=e63]:
+                    - /url: https://corporate.spicejet.com/YouFirst.aspx
+                    - generic [ref=e65]: You1st
+                  - link "Visa Services" [ref=e66]:
+                    - /url: https://corporate.spicejet.com/VisaServices.aspx
+                    - generic [ref=e68]: Visa Services
+                - generic [ref=e70]:
+                  - link "SpiceAssurance" [ref=e71]:
+                    - /url: https://corporate.spicejet.com/SpiceAssurance.aspx
+                    - generic [ref=e73]: SpiceAssurance
+                  - link "Friends and Family" [ref=e74]:
+                    - /url: https://corporate.spicejet.com/FamilyAndFriendOffer.aspx
+                    - generic [ref=e76]: Friends and Family
+                - generic [ref=e78]:
+                  - link "Senior Citizen Discount" [ref=e79]:
+                    - /url: https://corporate.spicejet.com/SeniorCitizen.aspx
+                    - generic [ref=e81]: Senior Citizen Discount
+                  - link "Student Discount" [ref=e82]:
+                    - /url: https://corporate.spicejet.com/StudentDiscountLanding.aspx
+                    - generic [ref=e84]: Student Discount
+                - generic [ref=e86]:
+                  - link "Extra Seat" [ref=e87]:
+                    - /url: https://corporate.spicejet.com/ExtraSeat.aspx
+                    - generic [ref=e89]: Extra Seat
+                  - link "SpiceLock" [ref=e90]:
+                    - /url: https://corporate.spicejet.com/spicelock.aspx
+                    - generic [ref=e92]: SpiceLock
+                - generic [ref=e94]:
+                  - link "Indian Armed Forces Personnel" [ref=e95]:
+                    - /url: https://corporate.spicejet.com/IAFPersonnel.aspx
+                    - generic [ref=e97]: Indian Armed Forces Personnel
+                  - link "SpiceFlex" [ref=e98]:
+                    - /url: https://corporate.spicejet.com/SpiceFlexFare.aspx
+                    - generic [ref=e100]: SpiceFlex
+                - generic [ref=e102]:
+                  - link "Govt. Employee" [ref=e103]:
+                    - /url: https://corporate.spicejet.com/GovtEmployee.aspx
+                    - generic [ref=e105]: Govt. Employee
+                  - link "SpicePlus" [ref=e106]:
+                    - /url: https://corporate.spicejet.com/spicePlus.aspx
+                    - generic [ref=e108]: SpicePlus
+                - generic [ref=e110]:
+                  - link "FlyEarly" [ref=e111]:
+                    - /url: https://corporate.spicejet.com/FLYEarlyProductatAirports.aspx
+                    - generic [ref=e113]: FlyEarly
+                  - link "Excess Baggage" [ref=e114]:
+                    - /url: https://corporate.spicejet.com/ExcessBaggage.aspx
+                    - generic [ref=e116]: Excess Baggage
+          - link "Deals" [ref=e117] [cursor=pointer]:
+            - /url: https://corporate.spicejet.com/RedHotOffers.aspx
+            - generic [ref=e119]: Deals
+          - link "GiftCard" [ref=e120] [cursor=pointer]:
+            - /url: https://spicejet.woohoo.in/home
+            - generic [ref=e122]: GiftCard
+          - generic [ref=e124]:
+            - generic [ref=e125] [cursor=pointer]:
+              - generic [ref=e126]: SpiceClub
+              - img [ref=e128]
+            - generic:
+              - img [ref=e131] [cursor=pointer]
+              - generic [ref=e136] [cursor=pointer]:
+                - generic [ref=e138]: About SpiceClub
+                - generic [ref=e141]:
+                  - link "Our Program" [ref=e143]:
+                    - /url: https://spiceclub.spicejet.com/home#program
+                    - generic [ref=e145]: Our Program
+                  - link "Benefits" [ref=e147]:
+                    - /url: https://spiceclub.spicejet.com/home#benefits
+                    - generic [ref=e149]: Benefits
+                  - link "Tiers" [ref=e151]:
+                    - /url: https://spiceclub.spicejet.com/home#tiers
+                    - generic [ref=e153]: Tiers
+                - generic [ref=e155]: SpiceClub Points
+                - generic [ref=e158]:
+                  - link "Earn Points" [ref=e160]:
+                    - /url: https://spiceclub.spicejet.com/howToEarn
+                    - generic [ref=e162]: Earn Points
+                  - link "Use Points" [ref=e164]:
+                    - /url: https://spiceclub.spicejet.com/howToUse
+                    - generic [ref=e166]: Use Points
+                - generic [ref=e168]: SpiceClub Exclusives
+                - generic [ref=e171]:
+                  - link "Credit Cards" [ref=e173]:
+                    - /url: https://spiceclub.spicejet.com/axisBank
+                    - generic [ref=e175]: Credit Cards
+                  - link "Instant Vouchers" [ref=e177]:
+                    - /url: https://spiceclub.spicejet.com/instantVouchers
+                    - generic [ref=e179]: Instant Vouchers
+          - link "SpiceScreen" [ref=e180] [cursor=pointer]:
+            - /url: https://spicescreen.com/
+            - generic [ref=e182]: SpiceScreen
+          - link "Cargo" [ref=e183] [cursor=pointer]:
+            - /url: https://www.spicexpress.com
+            - generic [ref=e185]: Cargo
+          - link "Charter" [ref=e186] [cursor=pointer]:
+            - /url: https://corporate.spicejet.com/CharterLanding.aspx
+            - generic [ref=e188]: Charter
+          - generic [ref=e190]:
+            - generic [ref=e191] [cursor=pointer]:
+              - generic [ref=e192]: Travel Policies
+              - img [ref=e194]
+            - generic:
+              - img [ref=e197] [cursor=pointer]
+              - generic [ref=e202] [cursor=pointer]:
+                - link "Passenger Support" [ref=e204]:
+                  - /url: https://corporate.spicejet.com/PassengerSupport.aspx
+                  - generic [ref=e206]: Passenger Support
+                - link "Passenger Rights" [ref=e208]:
+                  - /url: https://corporate.spicejet.com/PassengerRights.aspx
+                  - generic [ref=e210]: Passenger Rights
+                - link "Tariffs" [ref=e212]:
+                  - /url: https://corporate.spicejet.com/Content/pdf/Tariffs.pdf
+                  - generic [ref=e214]: Tariffs
+                - link "Baggage Information" [ref=e216]:
+                  - /url: https://corporate.spicejet.com/Baggage.aspx
+                  - generic [ref=e218]: Baggage Information
+        - generic [ref=e219]:
+          - generic [ref=e220] [cursor=pointer]:
+            - img [ref=e221]
+            - generic [ref=e224]: Login
+          - link "Signup" [ref=e227] [cursor=pointer]:
+            - /url: https://spiceclub.spicejet.com/signup
+      - generic [ref=e228]:
+        - generic [ref=e229]:
+          - generic [ref=e230] [cursor=pointer]:
+            - img [ref=e232]
+            - generic [ref=e234]: Flights
+          - generic [ref=e235] [cursor=pointer]:
+            - img [ref=e237]
+            - generic [ref=e239]: check-in
+          - generic [ref=e240] [cursor=pointer]:
+            - img [ref=e242]
+            - generic [ref=e244]: flight status
+          - generic [ref=e245] [cursor=pointer]:
+            - img [ref=e247]
+            - generic [ref=e249]: manage booking
+        - generic [ref=e250]:
+          - generic [ref=e251]:
+            - generic [ref=e253]:
+              - generic [ref=e254]: Welcome aboard
+              - generic [ref=e256]: Let's go places!
+            - link "Book your Charter" [ref=e258] [cursor=pointer]:
+              - /url: https://corporate.spicejet.com/CharterLanding.aspx
+              - generic [ref=e261]: Book your Charter
+          - generic [ref=e266]:
+            - generic [ref=e267] [cursor=pointer]:
+              - img [ref=e269]
+              - generic [ref=e274]: one way
+            - generic [ref=e275] [cursor=pointer]:
+              - img [ref=e277]
+              - generic [ref=e280]: round trip
+          - generic [ref=e282]:
+            - generic [ref=e284] [cursor=pointer]:
+              - generic [ref=e285]: From
+              - textbox [ref=e287]: Delhi (DEL)
+            - img [ref=e289] [cursor=pointer]
+            - generic [ref=e294] [cursor=pointer]:
+              - generic [ref=e295]: To
+              - textbox [ref=e297]: Bengaluru (BLR)
+          - generic [ref=e299]:
+            - generic [ref=e300]:
+              - generic [ref=e301] [cursor=pointer]:
+                - generic [ref=e302]: Departure Date
+                - generic [ref=e303]:
+                  - generic [ref=e304]: Wed, 29 Jul 2026
+                  - img [ref=e306]
+              - generic [ref=e308] [cursor=pointer]:
+                - generic [ref=e309]: Return Date
+                - generic [ref=e310]:
+                  - generic [ref=e311]: Select Date
+                  - img [ref=e313]
+            - generic [ref=e315]:
+              - img [ref=e317]
+              - generic [ref=e321]:
+                - img [ref=e323] [cursor=pointer]
+                - img [ref=e328] [cursor=pointer]
+                - generic [ref=e334]:
+                  - generic [ref=e336]:
+                    - generic [ref=e338]: July 2026
+                    - generic [ref=e339]:
+                      - generic [ref=e341]: Mon
+                      - generic [ref=e343]: Tue
+                      - generic [ref=e345]: Wed
+                      - generic [ref=e347]: Thu
+                      - generic [ref=e349]: Fri
+                      - generic [ref=e351]: Sat
+                      - generic [ref=e353]: Sun
+                    - generic [ref=e354]:
+                      - generic [ref=e355]:
+                        - generic [ref=e360] [cursor=pointer]: "1"
+                        - generic [ref=e363] [cursor=pointer]: "2"
+                        - generic [ref=e366] [cursor=pointer]: "3"
+                        - generic [ref=e369] [cursor=pointer]: "4"
+                        - generic [ref=e372] [cursor=pointer]: "5"
+                      - generic [ref=e373]:
+                        - generic [ref=e376] [cursor=pointer]: "6"
+                        - generic [ref=e379] [cursor=pointer]: "7"
+                        - generic [ref=e382] [cursor=pointer]: "8"
+                        - generic [ref=e385] [cursor=pointer]: "9"
+                        - generic [ref=e388] [cursor=pointer]: "10"
+                        - generic [ref=e391] [cursor=pointer]: "11"
+                        - generic [ref=e394] [cursor=pointer]: "12"
+                      - generic [ref=e395]:
+                        - generic [ref=e398] [cursor=pointer]: "13"
+                        - generic [ref=e401] [cursor=pointer]: "14"
+                        - generic [ref=e404] [cursor=pointer]: "15"
+                        - generic [ref=e407] [cursor=pointer]: "16"
+                        - generic [ref=e410] [cursor=pointer]: "17"
+                        - generic [ref=e413] [cursor=pointer]: "18"
+                        - generic [ref=e416] [cursor=pointer]: "19"
+                      - generic [ref=e417]:
+                        - generic [ref=e420] [cursor=pointer]: "20"
+                        - generic [ref=e423] [cursor=pointer]: "21"
+                        - generic [ref=e426] [cursor=pointer]: "22"
+                        - generic [ref=e429] [cursor=pointer]: "23"
+                        - generic [ref=e432] [cursor=pointer]: "24"
+                        - generic [ref=e435] [cursor=pointer]: "25"
+                        - generic [ref=e438] [cursor=pointer]: "26"
+                      - generic [ref=e439]:
+                        - generic [ref=e442] [cursor=pointer]: "27"
+                        - generic [ref=e445] [cursor=pointer]: "28"
+                        - generic [ref=e448] [cursor=pointer]: "29"
+                        - generic [ref=e451] [cursor=pointer]: "30"
+                        - generic [ref=e454] [cursor=pointer]: "31"
+                  - generic [ref=e458]:
+                    - generic [ref=e460]: August 2026
+                    - generic [ref=e461]:
+                      - generic [ref=e463]: Mon
+                      - generic [ref=e465]: Tue
+                      - generic [ref=e467]: Wed
+                      - generic [ref=e469]: Thu
+                      - generic [ref=e471]: Fri
+                      - generic [ref=e473]: Sat
+                      - generic [ref=e475]: Sun
+                    - generic [ref=e476]:
+                      - generic [ref=e477]:
+                        - generic [ref=e485] [cursor=pointer]: "1"
+                        - generic [ref=e488] [cursor=pointer]: "2"
+                      - generic [ref=e489]:
+                        - generic [ref=e492] [cursor=pointer]: "3"
+                        - generic [ref=e495] [cursor=pointer]: "4"
+                        - generic [ref=e498] [cursor=pointer]: "5"
+                        - generic [ref=e501] [cursor=pointer]: "6"
+                        - generic [ref=e504] [cursor=pointer]: "7"
+                        - generic [ref=e507] [cursor=pointer]: "8"
+                        - generic [ref=e510] [cursor=pointer]: "9"
+                      - generic [ref=e511]:
+                        - generic [ref=e514] [cursor=pointer]: "10"
+                        - generic [ref=e517] [cursor=pointer]: "11"
+                        - generic [ref=e520] [cursor=pointer]: "12"
+                        - generic [ref=e523] [cursor=pointer]: "13"
+                        - generic [ref=e526] [cursor=pointer]: "14"
+                        - generic [ref=e529] [cursor=pointer]: "15"
+                        - generic [ref=e532] [cursor=pointer]: "16"
+                      - generic [ref=e533]:
+                        - generic [ref=e536] [cursor=pointer]: "17"
+                        - generic [ref=e539] [cursor=pointer]: "18"
+                        - generic [ref=e542] [cursor=pointer]: "19"
+                        - generic [ref=e545] [cursor=pointer]: "20"
+                        - generic [ref=e548] [cursor=pointer]: "21"
+                        - generic [ref=e551] [cursor=pointer]: "22"
+                        - generic [ref=e554] [cursor=pointer]: "23"
+                      - generic [ref=e555]:
+                        - generic [ref=e558] [cursor=pointer]: "24"
+                        - generic [ref=e561] [cursor=pointer]: "25"
+                        - generic [ref=e564] [cursor=pointer]: "26"
+                        - generic [ref=e567] [cursor=pointer]: "27"
+                        - generic [ref=e570] [cursor=pointer]: "28"
+                        - generic [ref=e573] [cursor=pointer]: "29"
+                        - generic [ref=e576] [cursor=pointer]: "30"
+                      - generic [ref=e580] [cursor=pointer]: "31"
+                  - generic [ref=e588]:
+                    - generic [ref=e590]: September 2026
+                    - generic [ref=e591]:
+                      - generic [ref=e593]: Mon
+                      - generic [ref=e595]: Tue
+                      - generic [ref=e597]: Wed
+                      - generic [ref=e599]: Thu
+                      - generic [ref=e601]: Fri
+                      - generic [ref=e603]: Sat
+                      - generic [ref=e605]: Sun
+                    - generic [ref=e606]:
+                      - generic [ref=e607]:
+                        - generic [ref=e611] [cursor=pointer]: "1"
+                        - generic [ref=e614] [cursor=pointer]: "2"
+                        - generic [ref=e617] [cursor=pointer]: "3"
+                        - generic [ref=e620] [cursor=pointer]: "4"
+                        - generic [ref=e623] [cursor=pointer]: "5"
+                        - generic [ref=e626] [cursor=pointer]: "6"
+                      - generic [ref=e627]:
+                        - generic [ref=e630] [cursor=pointer]: "7"
+                        - generic [ref=e633] [cursor=pointer]: "8"
+                        - generic [ref=e636] [cursor=pointer]: "9"
+                        - generic [ref=e639] [cursor=pointer]: "10"
+                        - generic [ref=e642] [cursor=pointer]: "11"
+                        - generic [ref=e645] [cursor=pointer]: "12"
+                        - generic [ref=e648] [cursor=pointer]: "13"
+                      - generic [ref=e649]:
+                        - generic [ref=e652] [cursor=pointer]: "14"
+                        - generic [ref=e655] [cursor=pointer]: "15"
+                        - generic [ref=e658] [cursor=pointer]: "16"
+                        - generic [ref=e661] [cursor=pointer]: "17"
+                        - generic [ref=e664] [cursor=pointer]: "18"
+                        - generic [ref=e667] [cursor=pointer]: "19"
+                        - generic [ref=e670] [cursor=pointer]: "20"
+                      - generic [ref=e671]:
+                        - generic [ref=e674] [cursor=pointer]: "21"
+                        - generic [ref=e677] [cursor=pointer]: "22"
+                        - generic [ref=e680] [cursor=pointer]: "23"
+                        - generic [ref=e683] [cursor=pointer]: "24"
+                        - generic [ref=e686] [cursor=pointer]: "25"
+                        - generic [ref=e689] [cursor=pointer]: "26"
+                        - generic [ref=e692] [cursor=pointer]: "27"
+                      - generic [ref=e693]:
+                        - generic [ref=e696] [cursor=pointer]: "28"
+                        - generic [ref=e699] [cursor=pointer]: "29"
+                        - generic [ref=e702] [cursor=pointer]: "30"
+                  - generic [ref=e708]:
+                    - generic [ref=e710]: October 2026
+                    - generic [ref=e711]:
+                      - generic [ref=e713]: Mon
+                      - generic [ref=e715]: Tue
+                      - generic [ref=e717]: Wed
+                      - generic [ref=e719]: Thu
+                      - generic [ref=e721]: Fri
+                      - generic [ref=e723]: Sat
+                      - generic [ref=e725]: Sun
+                    - generic [ref=e726]:
+                      - generic [ref=e727]:
+                        - generic [ref=e733] [cursor=pointer]: "1"
+                        - generic [ref=e736] [cursor=pointer]: "2"
+                        - generic [ref=e739] [cursor=pointer]: "3"
+                        - generic [ref=e742] [cursor=pointer]: "4"
+                      - generic [ref=e743]:
+                        - generic [ref=e746] [cursor=pointer]: "5"
+                        - generic [ref=e749] [cursor=pointer]: "6"
+                        - generic [ref=e752] [cursor=pointer]: "7"
+                        - generic [ref=e755] [cursor=pointer]: "8"
+                        - generic [ref=e758] [cursor=pointer]: "9"
+                        - generic [ref=e761] [cursor=pointer]: "10"
+                        - generic [ref=e764] [cursor=pointer]: "11"
+                      - generic [ref=e765]:
+                        - generic [ref=e768] [cursor=pointer]: "12"
+                        - generic [ref=e771] [cursor=pointer]: "13"
+                        - generic [ref=e774] [cursor=pointer]: "14"
+                        - generic [ref=e777] [cursor=pointer]: "15"
+                        - generic [ref=e780] [cursor=pointer]: "16"
+                        - generic [ref=e783] [cursor=pointer]: "17"
+                        - generic [ref=e786] [cursor=pointer]: "18"
+                      - generic [ref=e787]:
+                        - generic [ref=e790] [cursor=pointer]: "19"
+                        - generic [ref=e793] [cursor=pointer]: "20"
+                        - generic [ref=e796] [cursor=pointer]: "21"
+                        - generic [ref=e799] [cursor=pointer]: "22"
+                        - generic [ref=e802] [cursor=pointer]: "23"
+                        - generic [ref=e805] [cursor=pointer]: "24"
+                        - generic [ref=e808] [cursor=pointer]: "25"
+                      - generic [ref=e809]:
+                        - generic [ref=e812] [cursor=pointer]: "26"
+                        - generic [ref=e815] [cursor=pointer]: "27"
+                        - generic [ref=e818] [cursor=pointer]: "28"
+                        - generic [ref=e821] [cursor=pointer]: "29"
+                        - generic [ref=e824] [cursor=pointer]: "30"
+                        - generic [ref=e827] [cursor=pointer]: "31"
+                  - generic [ref=e830]:
+                    - generic [ref=e832]: November 2026
+                    - generic [ref=e833]:
+                      - generic [ref=e835]: Mon
+                      - generic [ref=e837]: Tue
+                      - generic [ref=e839]: Wed
+                      - generic [ref=e841]: Thu
+                      - generic [ref=e843]: Fri
+                      - generic [ref=e845]: Sat
+                      - generic [ref=e847]: Sun
+                    - generic [ref=e848]:
+                      - generic [ref=e858] [cursor=pointer]: "1"
+                      - generic [ref=e859]:
+                        - generic [ref=e862] [cursor=pointer]: "2"
+                        - generic [ref=e865] [cursor=pointer]: "3"
+                        - generic [ref=e868] [cursor=pointer]: "4"
+                        - generic [ref=e871] [cursor=pointer]: "5"
+                        - generic [ref=e874] [cursor=pointer]: "6"
+                        - generic [ref=e877] [cursor=pointer]: "7"
+                        - generic [ref=e880] [cursor=pointer]: "8"
+                      - generic [ref=e881]:
+                        - generic [ref=e884] [cursor=pointer]: "9"
+                        - generic [ref=e887] [cursor=pointer]: "10"
+                        - generic [ref=e890] [cursor=pointer]: "11"
+                        - generic [ref=e893] [cursor=pointer]: "12"
+                        - generic [ref=e896] [cursor=pointer]: "13"
+                        - generic [ref=e899] [cursor=pointer]: "14"
+                        - generic [ref=e902] [cursor=pointer]: "15"
+                      - generic [ref=e903]:
+                        - generic [ref=e906] [cursor=pointer]: "16"
+                        - generic [ref=e909] [cursor=pointer]: "17"
+                        - generic [ref=e912] [cursor=pointer]: "18"
+                        - generic [ref=e915] [cursor=pointer]: "19"
+                        - generic [ref=e918] [cursor=pointer]: "20"
+                        - generic [ref=e921] [cursor=pointer]: "21"
+                        - generic [ref=e924] [cursor=pointer]: "22"
+                      - generic [ref=e925]:
+                        - generic [ref=e928] [cursor=pointer]: "23"
+                        - generic [ref=e931] [cursor=pointer]: "24"
+                        - generic [ref=e934] [cursor=pointer]: "25"
+                        - generic [ref=e937] [cursor=pointer]: "26"
+                        - generic [ref=e940] [cursor=pointer]: "27"
+                        - generic [ref=e943] [cursor=pointer]: "28"
+                        - generic [ref=e946] [cursor=pointer]: "29"
+                      - generic [ref=e950] [cursor=pointer]: "30"
+                  - generic [ref=e958]:
+                    - generic [ref=e960]: December 2026
+                    - generic [ref=e961]:
+                      - generic [ref=e963]: Mon
+                      - generic [ref=e965]: Tue
+                      - generic [ref=e967]: Wed
+                      - generic [ref=e969]: Thu
+                      - generic [ref=e971]: Fri
+                      - generic [ref=e973]: Sat
+                      - generic [ref=e975]: Sun
+                    - generic [ref=e976]:
+                      - generic [ref=e977]:
+                        - generic [ref=e981] [cursor=pointer]: "1"
+                        - generic [ref=e984] [cursor=pointer]: "2"
+                        - generic [ref=e987] [cursor=pointer]: "3"
+                        - generic [ref=e990] [cursor=pointer]: "4"
+                        - generic [ref=e993] [cursor=pointer]: "5"
+                        - generic [ref=e996] [cursor=pointer]: "6"
+                      - generic [ref=e997]:
+                        - generic [ref=e1000] [cursor=pointer]: "7"
+                        - generic [ref=e1003] [cursor=pointer]: "8"
+                        - generic [ref=e1006] [cursor=pointer]: "9"
+                        - generic [ref=e1009] [cursor=pointer]: "10"
+                        - generic [ref=e1012] [cursor=pointer]: "11"
+                        - generic [ref=e1015] [cursor=pointer]: "12"
+                        - generic [ref=e1018] [cursor=pointer]: "13"
+                      - generic [ref=e1019]:
+                        - generic [ref=e1022] [cursor=pointer]: "14"
+                        - generic [ref=e1025] [cursor=pointer]: "15"
+                        - generic [ref=e1028] [cursor=pointer]: "16"
+                        - generic [ref=e1031] [cursor=pointer]: "17"
+                        - generic [ref=e1034] [cursor=pointer]: "18"
+                        - generic [ref=e1037] [cursor=pointer]: "19"
+                        - generic [ref=e1040] [cursor=pointer]: "20"
+                      - generic [ref=e1041]:
+                        - generic [ref=e1044] [cursor=pointer]: "21"
+                        - generic [ref=e1047] [cursor=pointer]: "22"
+                        - generic [ref=e1050] [cursor=pointer]: "23"
+                        - generic [ref=e1053] [cursor=pointer]: "24"
+                        - generic [ref=e1056] [cursor=pointer]: "25"
+                        - generic [ref=e1059] [cursor=pointer]: "26"
+                        - generic [ref=e1062] [cursor=pointer]: "27"
+                      - generic [ref=e1063]:
+                        - generic [ref=e1066] [cursor=pointer]: "28"
+                        - generic [ref=e1069] [cursor=pointer]: "29"
+                        - generic [ref=e1072] [cursor=pointer]: "30"
+                        - generic [ref=e1075] [cursor=pointer]: "31"
+                  - generic [ref=e1080]:
+                    - generic [ref=e1082]: January 2027
+                    - generic [ref=e1083]:
+                      - generic [ref=e1085]: Mon
+                      - generic [ref=e1087]: Tue
+                      - generic [ref=e1089]: Wed
+                      - generic [ref=e1091]: Thu
+                      - generic [ref=e1093]: Fri
+                      - generic [ref=e1095]: Sat
+                      - generic [ref=e1097]: Sun
+                    - generic [ref=e1098]:
+                      - generic [ref=e1099]:
+                        - generic [ref=e1106] [cursor=pointer]: "1"
+                        - generic [ref=e1109] [cursor=pointer]: "2"
+                        - generic [ref=e1112] [cursor=pointer]: "3"
+                      - generic [ref=e1113]:
+                        - generic [ref=e1116] [cursor=pointer]: "4"
+                        - generic [ref=e1119] [cursor=pointer]: "5"
+                        - generic [ref=e1122] [cursor=pointer]: "6"
+                        - generic [ref=e1125] [cursor=pointer]: "7"
+                        - generic [ref=e1128] [cursor=pointer]: "8"
+                        - generic [ref=e1131] [cursor=pointer]: "9"
+                        - generic [ref=e1134] [cursor=pointer]: "10"
+                      - generic [ref=e1135]:
+                        - generic [ref=e1138] [cursor=pointer]: "11"
+                        - generic [ref=e1141] [cursor=pointer]: "12"
+                        - generic [ref=e1144] [cursor=pointer]: "13"
+                        - generic [ref=e1147] [cursor=pointer]: "14"
+                        - generic [ref=e1150] [cursor=pointer]: "15"
+                        - generic [ref=e1153] [cursor=pointer]: "16"
+                        - generic [ref=e1156] [cursor=pointer]: "17"
+                      - generic [ref=e1157]:
+                        - generic [ref=e1160] [cursor=pointer]: "18"
+                        - generic [ref=e1163] [cursor=pointer]: "19"
+                        - generic [ref=e1166] [cursor=pointer]: "20"
+                        - generic [ref=e1169] [cursor=pointer]: "21"
+                        - generic [ref=e1172] [cursor=pointer]: "22"
+                        - generic [ref=e1175] [cursor=pointer]: "23"
+                        - generic [ref=e1178] [cursor=pointer]: "24"
+                      - generic [ref=e1179]:
+                        - generic [ref=e1182] [cursor=pointer]: "25"
+                        - generic [ref=e1185] [cursor=pointer]: "26"
+                        - generic [ref=e1188] [cursor=pointer]: "27"
+                        - generic [ref=e1191] [cursor=pointer]: "28"
+                        - generic [ref=e1194] [cursor=pointer]: "29"
+                        - generic [ref=e1197] [cursor=pointer]: "30"
+                        - generic [ref=e1200] [cursor=pointer]: "31"
+                  - generic [ref=e1202]:
+                    - generic [ref=e1204]: February 2027
+                    - generic [ref=e1205]:
+                      - generic [ref=e1207]: Mon
+                      - generic [ref=e1209]: Tue
+                      - generic [ref=e1211]: Wed
+                      - generic [ref=e1213]: Thu
+                      - generic [ref=e1215]: Fri
+                      - generic [ref=e1217]: Sat
+                      - generic [ref=e1219]: Sun
+                    - generic [ref=e1220]:
+                      - generic [ref=e1221]:
+                        - generic [ref=e1224] [cursor=pointer]: "1"
+                        - generic [ref=e1227] [cursor=pointer]: "2"
+                        - generic [ref=e1230] [cursor=pointer]: "3"
+                        - generic [ref=e1233] [cursor=pointer]: "4"
+                        - generic [ref=e1236] [cursor=pointer]: "5"
+                        - generic [ref=e1239] [cursor=pointer]: "6"
+                        - generic [ref=e1242] [cursor=pointer]: "7"
+                      - generic [ref=e1243]:
+                        - generic [ref=e1246] [cursor=pointer]: "8"
+                        - generic [ref=e1249] [cursor=pointer]: "9"
+                        - generic [ref=e1252] [cursor=pointer]: "10"
+                        - generic [ref=e1255] [cursor=pointer]: "11"
+                        - generic [ref=e1258] [cursor=pointer]: "12"
+                        - generic [ref=e1261] [cursor=pointer]: "13"
+                        - generic [ref=e1264] [cursor=pointer]: "14"
+                      - generic [ref=e1265]:
+                        - generic [ref=e1268] [cursor=pointer]: "15"
+                        - generic [ref=e1271] [cursor=pointer]: "16"
+                        - generic [ref=e1274] [cursor=pointer]: "17"
+                        - generic [ref=e1277] [cursor=pointer]: "18"
+                        - generic [ref=e1280] [cursor=pointer]: "19"
+                        - generic [ref=e1283] [cursor=pointer]: "20"
+                        - generic [ref=e1286] [cursor=pointer]: "21"
+                      - generic [ref=e1287]:
+                        - generic [ref=e1290] [cursor=pointer]: "22"
+                        - generic [ref=e1293] [cursor=pointer]: "23"
+                        - generic [ref=e1296] [cursor=pointer]: "24"
+                        - generic [ref=e1299] [cursor=pointer]: "25"
+                        - generic [ref=e1302] [cursor=pointer]: "26"
+                        - generic [ref=e1305] [cursor=pointer]: "27"
+                        - generic [ref=e1308] [cursor=pointer]: "28"
+                  - generic [ref=e1310]:
+                    - generic [ref=e1312]: March 2027
+                    - generic [ref=e1313]:
+                      - generic [ref=e1315]: Mon
+                      - generic [ref=e1317]: Tue
+                      - generic [ref=e1319]: Wed
+                      - generic [ref=e1321]: Thu
+                      - generic [ref=e1323]: Fri
+                      - generic [ref=e1325]: Sat
+                      - generic [ref=e1327]: Sun
+                    - generic [ref=e1328]:
+                      - generic [ref=e1329]:
+                        - generic [ref=e1332] [cursor=pointer]: "1"
+                        - generic [ref=e1335] [cursor=pointer]: "2"
+                        - generic [ref=e1338] [cursor=pointer]: "3"
+                        - generic [ref=e1341] [cursor=pointer]: "4"
+                        - generic [ref=e1344] [cursor=pointer]: "5"
+                        - generic [ref=e1347] [cursor=pointer]: "6"
+                        - generic [ref=e1350] [cursor=pointer]: "7"
+                      - generic [ref=e1351]:
+                        - generic [ref=e1354] [cursor=pointer]: "8"
+                        - generic [ref=e1357] [cursor=pointer]: "9"
+                        - generic [ref=e1360] [cursor=pointer]: "10"
+                        - generic [ref=e1363] [cursor=pointer]: "11"
+                        - generic [ref=e1366] [cursor=pointer]: "12"
+                        - generic [ref=e1369] [cursor=pointer]: "13"
+                        - generic [ref=e1372] [cursor=pointer]: "14"
+                      - generic [ref=e1373]:
+                        - generic [ref=e1376] [cursor=pointer]: "15"
+                        - generic [ref=e1379] [cursor=pointer]: "16"
+                        - generic [ref=e1382] [cursor=pointer]: "17"
+                        - generic [ref=e1385] [cursor=pointer]: "18"
+                        - generic [ref=e1388] [cursor=pointer]: "19"
+                        - generic [ref=e1391] [cursor=pointer]: "20"
+                        - generic [ref=e1394] [cursor=pointer]: "21"
+                      - generic [ref=e1395]:
+                        - generic [ref=e1398] [cursor=pointer]: "22"
+                        - generic [ref=e1401] [cursor=pointer]: "23"
+                        - generic [ref=e1404] [cursor=pointer]: "24"
+                        - generic [ref=e1407] [cursor=pointer]: "25"
+                        - generic [ref=e1410] [cursor=pointer]: "26"
+                        - generic [ref=e1413] [cursor=pointer]: "27"
+                        - generic [ref=e1416] [cursor=pointer]: "28"
+                      - generic [ref=e1417]:
+                        - generic [ref=e1420] [cursor=pointer]: "29"
+                        - generic [ref=e1423] [cursor=pointer]: "30"
+                        - generic [ref=e1426] [cursor=pointer]: "31"
+                  - generic [ref=e1432]:
+                    - generic [ref=e1434]: April 2027
+                    - generic [ref=e1435]:
+                      - generic [ref=e1437]: Mon
+                      - generic [ref=e1439]: Tue
+                      - generic [ref=e1441]: Wed
+                      - generic [ref=e1443]: Thu
+                      - generic [ref=e1445]: Fri
+                      - generic [ref=e1447]: Sat
+                      - generic [ref=e1449]: Sun
+                    - generic [ref=e1450]:
+                      - generic [ref=e1451]:
+                        - generic [ref=e1457] [cursor=pointer]: "1"
+                        - generic [ref=e1460] [cursor=pointer]: "2"
+                        - generic [ref=e1463] [cursor=pointer]: "3"
+                        - generic [ref=e1466] [cursor=pointer]: "4"
+                      - generic [ref=e1467]:
+                        - generic [ref=e1470] [cursor=pointer]: "5"
+                        - generic [ref=e1473] [cursor=pointer]: "6"
+                        - generic [ref=e1476] [cursor=pointer]: "7"
+                        - generic [ref=e1479] [cursor=pointer]: "8"
+                        - generic [ref=e1482] [cursor=pointer]: "9"
+                        - generic [ref=e1485] [cursor=pointer]: "10"
+                        - generic [ref=e1488] [cursor=pointer]: "11"
+                      - generic [ref=e1489]:
+                        - generic [ref=e1492] [cursor=pointer]: "12"
+                        - generic [ref=e1495] [cursor=pointer]: "13"
+                        - generic [ref=e1498] [cursor=pointer]: "14"
+                        - generic [ref=e1501] [cursor=pointer]: "15"
+                        - generic [ref=e1504] [cursor=pointer]: "16"
+                        - generic [ref=e1507] [cursor=pointer]: "17"
+                        - generic [ref=e1510] [cursor=pointer]: "18"
+                      - generic [ref=e1511]:
+                        - generic [ref=e1514] [cursor=pointer]: "19"
+                        - generic [ref=e1517] [cursor=pointer]: "20"
+                        - generic [ref=e1520] [cursor=pointer]: "21"
+                        - generic [ref=e1523] [cursor=pointer]: "22"
+                        - generic [ref=e1526] [cursor=pointer]: "23"
+                        - generic [ref=e1529] [cursor=pointer]: "24"
+                        - generic [ref=e1532] [cursor=pointer]: "25"
+                      - generic [ref=e1533]:
+                        - generic [ref=e1536] [cursor=pointer]: "26"
+                        - generic [ref=e1539] [cursor=pointer]: "27"
+                        - generic [ref=e1542] [cursor=pointer]: "28"
+                        - generic [ref=e1545] [cursor=pointer]: "29"
+                        - generic [ref=e1548] [cursor=pointer]: "30"
+                  - generic [ref=e1552]:
+                    - generic [ref=e1554]: May 2027
+                    - generic [ref=e1555]:
+                      - generic [ref=e1557]: Mon
+                      - generic [ref=e1559]: Tue
+                      - generic [ref=e1561]: Wed
+                      - generic [ref=e1563]: Thu
+                      - generic [ref=e1565]: Fri
+                      - generic [ref=e1567]: Sat
+                      - generic [ref=e1569]: Sun
+                    - generic [ref=e1570]:
+                      - generic [ref=e1571]:
+                        - generic [ref=e1579] [cursor=pointer]: "1"
+                        - generic [ref=e1582] [cursor=pointer]: "2"
+                      - generic [ref=e1583]:
+                        - generic [ref=e1586] [cursor=pointer]: "3"
+                        - generic [ref=e1589] [cursor=pointer]: "4"
+                        - generic [ref=e1592] [cursor=pointer]: "5"
+                        - generic [ref=e1595] [cursor=pointer]: "6"
+                        - generic [ref=e1598] [cursor=pointer]: "7"
+                        - generic [ref=e1601] [cursor=pointer]: "8"
+                        - generic [ref=e1604] [cursor=pointer]: "9"
+                      - generic [ref=e1605]:
+                        - generic [ref=e1608] [cursor=pointer]: "10"
+                        - generic [ref=e1611] [cursor=pointer]: "11"
+                        - generic [ref=e1614] [cursor=pointer]: "12"
+                        - generic [ref=e1617] [cursor=pointer]: "13"
+                        - generic [ref=e1620] [cursor=pointer]: "14"
+                        - generic [ref=e1623] [cursor=pointer]: "15"
+                        - generic [ref=e1626] [cursor=pointer]: "16"
+                      - generic [ref=e1627]:
+                        - generic [ref=e1630] [cursor=pointer]: "17"
+                        - generic [ref=e1633] [cursor=pointer]: "18"
+                        - generic [ref=e1636] [cursor=pointer]: "19"
+                        - generic [ref=e1639] [cursor=pointer]: "20"
+                        - generic [ref=e1642] [cursor=pointer]: "21"
+                        - generic [ref=e1645] [cursor=pointer]: "22"
+                        - generic [ref=e1648] [cursor=pointer]: "23"
+                      - generic [ref=e1649]:
+                        - generic [ref=e1652] [cursor=pointer]: "24"
+                        - generic [ref=e1655] [cursor=pointer]: "25"
+                        - generic [ref=e1658] [cursor=pointer]: "26"
+                        - generic [ref=e1661] [cursor=pointer]: "27"
+                        - generic [ref=e1664] [cursor=pointer]: "28"
+                        - generic [ref=e1667] [cursor=pointer]: "29"
+                        - generic [ref=e1670] [cursor=pointer]: "30"
+                      - generic [ref=e1674] [cursor=pointer]: "31"
+                  - generic [ref=e1682]:
+                    - generic [ref=e1684]: June 2027
+                    - generic [ref=e1685]:
+                      - generic [ref=e1687]: Mon
+                      - generic [ref=e1689]: Tue
+                      - generic [ref=e1691]: Wed
+                      - generic [ref=e1693]: Thu
+                      - generic [ref=e1695]: Fri
+                      - generic [ref=e1697]: Sat
+                      - generic [ref=e1699]: Sun
+                    - generic [ref=e1700]:
+                      - generic [ref=e1701]:
+                        - generic [ref=e1705] [cursor=pointer]: "1"
+                        - generic [ref=e1708] [cursor=pointer]: "2"
+                        - generic [ref=e1711] [cursor=pointer]: "3"
+                        - generic [ref=e1714] [cursor=pointer]: "4"
+                        - generic [ref=e1717] [cursor=pointer]: "5"
+                        - generic [ref=e1720] [cursor=pointer]: "6"
+                      - generic [ref=e1721]:
+                        - generic [ref=e1724] [cursor=pointer]: "7"
+                        - generic [ref=e1727] [cursor=pointer]: "8"
+                        - generic [ref=e1730] [cursor=pointer]: "9"
+                        - generic [ref=e1733] [cursor=pointer]: "10"
+                        - generic [ref=e1736] [cursor=pointer]: "11"
+                        - generic [ref=e1739] [cursor=pointer]: "12"
+                        - generic [ref=e1742] [cursor=pointer]: "13"
+                      - generic [ref=e1743]:
+                        - generic [ref=e1746] [cursor=pointer]: "14"
+                        - generic [ref=e1749] [cursor=pointer]: "15"
+                        - generic [ref=e1752] [cursor=pointer]: "16"
+                        - generic [ref=e1755] [cursor=pointer]: "17"
+                        - generic [ref=e1758] [cursor=pointer]: "18"
+                        - generic [ref=e1761] [cursor=pointer]: "19"
+                        - generic [ref=e1764] [cursor=pointer]: "20"
+                      - generic [ref=e1765]:
+                        - generic [ref=e1768] [cursor=pointer]: "21"
+                        - generic [ref=e1771] [cursor=pointer]: "22"
+                        - generic [ref=e1774] [cursor=pointer]: "23"
+                        - generic [ref=e1777] [cursor=pointer]: "24"
+                        - generic [ref=e1780] [cursor=pointer]: "25"
+                        - generic [ref=e1783] [cursor=pointer]: "26"
+                        - generic [ref=e1786] [cursor=pointer]: "27"
+                      - generic [ref=e1787]:
+                        - generic [ref=e1790] [cursor=pointer]: "28"
+                        - generic [ref=e1793] [cursor=pointer]: "29"
+                        - generic [ref=e1796] [cursor=pointer]: "30"
+                  - generic [ref=e1802]:
+                    - generic [ref=e1804]: July 2027
+                    - generic [ref=e1805]:
+                      - generic [ref=e1807]: Mon
+                      - generic [ref=e1809]: Tue
+                      - generic [ref=e1811]: Wed
+                      - generic [ref=e1813]: Thu
+                      - generic [ref=e1815]: Fri
+                      - generic [ref=e1817]: Sat
+                      - generic [ref=e1819]: Sun
+                    - generic [ref=e1820]:
+                      - generic [ref=e1821]:
+                        - generic [ref=e1827] [cursor=pointer]: "1"
+                        - generic [ref=e1830] [cursor=pointer]: "2"
+                        - generic [ref=e1833] [cursor=pointer]: "3"
+                        - generic [ref=e1836] [cursor=pointer]: "4"
+                      - generic [ref=e1837]:
+                        - generic [ref=e1840] [cursor=pointer]: "5"
+                        - generic [ref=e1843] [cursor=pointer]: "6"
+                        - generic [ref=e1846] [cursor=pointer]: "7"
+                        - generic [ref=e1849] [cursor=pointer]: "8"
+                        - generic [ref=e1852] [cursor=pointer]: "9"
+                        - generic [ref=e1855] [cursor=pointer]: "10"
+                        - generic [ref=e1858] [cursor=pointer]: "11"
+                      - generic [ref=e1859]:
+                        - generic [ref=e1862] [cursor=pointer]: "12"
+                        - generic [ref=e1865] [cursor=pointer]: "13"
+                        - generic [ref=e1868] [cursor=pointer]: "14"
+                        - generic [ref=e1871] [cursor=pointer]: "15"
+                        - generic [ref=e1874] [cursor=pointer]: "16"
+                        - generic [ref=e1877] [cursor=pointer]: "17"
+                        - generic [ref=e1880] [cursor=pointer]: "18"
+                      - generic [ref=e1881]:
+                        - generic [ref=e1884] [cursor=pointer]: "19"
+                        - generic [ref=e1887] [cursor=pointer]: "20"
+                        - generic [ref=e1890] [cursor=pointer]: "21"
+                        - generic [ref=e1893] [cursor=pointer]: "22"
+                        - generic [ref=e1896] [cursor=pointer]: "23"
+                        - generic [ref=e1899] [cursor=pointer]: "24"
+                        - generic [ref=e1902] [cursor=pointer]: "25"
+                      - generic [ref=e1903]:
+                        - generic [ref=e1906] [cursor=pointer]: "26"
+                        - generic [ref=e1909] [cursor=pointer]: "27"
+                        - generic [ref=e1912] [cursor=pointer]: "28"
+                        - generic [ref=e1915] [cursor=pointer]: "29"
+                        - generic [ref=e1918] [cursor=pointer]: "30"
+                        - generic [ref=e1921] [cursor=pointer]: "31"
+          - generic [ref=e1923]:
+            - generic [ref=e1926] [cursor=pointer]:
+              - generic [ref=e1927]: Passengers
+              - generic [ref=e1928]:
+                - generic [ref=e1929]: 1 Adult
+                - img [ref=e1931]
+            - generic [ref=e1934] [cursor=pointer]:
+              - generic [ref=e1935]: Currency
+              - generic [ref=e1936]:
+                - generic [ref=e1937]: INR
+                - img [ref=e1939]
+          - generic [ref=e1945]:
+            - generic [ref=e1948] [cursor=pointer]:
+              - img [ref=e1950]
+              - generic [ref=e1953]: Family & Friends
+            - generic [ref=e1956] [cursor=pointer]:
+              - img [ref=e1958]
+              - generic [ref=e1961]: Senior Citizen
+            - generic [ref=e1964] [cursor=pointer]:
+              - img [ref=e1966]
+              - generic [ref=e1969]: Unaccompanied Minor
+            - generic [ref=e1972] [cursor=pointer]:
+              - img [ref=e1974]
+              - generic [ref=e1977]: Students
+            - generic [ref=e1980] [cursor=pointer]:
+              - img [ref=e1982]
+              - generic [ref=e1985]: Armed Forces
+            - generic [ref=e1988] [cursor=pointer]:
+              - img [ref=e1990]
+              - generic [ref=e1993]: Govt. Employee
+            - link "Special Assistance" [ref=e1994] [cursor=pointer]:
+              - /url: https://corporate.spicejet.com/SpecialAssistance.aspx
+              - generic [ref=e1995]:
+                - img [ref=e1996]
+                - generic [ref=e2005]: Special Assistance
+          - generic [ref=e2009] [cursor=pointer]:
+            - generic: Search Flight
+      - generic [ref=e2020]:
+        - generic [ref=e2022]:
+          - text: Due to the onset of the summer schedule from 29 March, flight timings may change. Passengers are advised to check their flight status before departure.
+          - link [ref=e2023] [cursor=pointer]:
+            - /url: ""
+        - generic [ref=e2025]:
+          - text: Due to ongoing developments in the Middle East region, some flights may be impacted. Please check your
+          - link "flight status" [ref=e2026] [cursor=pointer]:
+            - /url: https://www.spicejet.com/#status
+          - text: for updates.
+        - generic [ref=e2028]:
+          - text: Passengers carrying arms & ammunition must request clearance at least 72 hours before departure. Email custrelations@spicejet.com for assistance.
+          - link "Read more" [ref=e2029] [cursor=pointer]:
+            - /url: " https://corporate.spicejet.com/Tnc.aspx"
+          - text: .
+        - generic [ref=e2031]:
+          - text: Use our
+          - link "Change Assist" [ref=e2032] [cursor=pointer]:
+            - /url: https://changes.spicejet.com/index.html#/
+          - text: portal for easy rescheduling or refunds for your affected flight.
+        - generic [ref=e2034]:
+          - text: Only 1 piece of hand baggage of up to 7 kg is permitted on all SpiceJet flights. Power banks/portable mobile chargers are ONLY allowed in Cabin Baggage. E-cigarettes are prohibited to be carried in Cabin as well as Checked-in Baggage.
+          - link [ref=e2035] [cursor=pointer]:
+            - /url: ""
+        - generic [ref=e2037]:
+          - text: With DigiYatra, enjoy quick and easy entry to the airport, and pre-security check with your face as your boarding pass for the next SpiceJet flight at select cities.
+          - link "Know more." [ref=e2038] [cursor=pointer]:
+            - /url: https://corporate.spicejet.com/Digiyatra.aspx
+      - generic [ref=e2051]:
+        - generic [ref=e2052]: I Am Here For...
+        - generic [ref=e2053]:
+          - link "sjlady Change Assist (Choose alternate flight or refund for changed/cancelled flights)" [ref=e2054] [cursor=pointer]:
+            - /url: https://changes.spicejet.com/index.html#/
+            - generic [ref=e2055]:
+              - img "sjlady" [ref=e2057]
+              - generic [ref=e2058]:
+                - generic [ref=e2059]: Change Assist
+                - generic [ref=e2060]: (Choose alternate flight
+                - generic [ref=e2061]: or refund for
+                - generic [ref=e2062]: changed/cancelled flights)
+          - link "sjlady SpiceClub" [ref=e2063] [cursor=pointer]:
+            - /url: https://spiceclub.spicejet.com/
+            - generic [ref=e2064]:
+              - img "sjlady" [ref=e2066]
+              - generic [ref=e2068]: SpiceClub
+          - link "sjlady SpiceJet Axis Bank Credit Card" [ref=e2069] [cursor=pointer]:
+            - /url: https://spiceclub.spicejet.com/axisBank
+            - generic [ref=e2070]:
+              - img "sjlady" [ref=e2072]
+              - generic [ref=e2074]: SpiceJet Axis Bank Credit Card
+          - link "sjlady Visa Services" [ref=e2075] [cursor=pointer]:
+            - /url: https://corporate.spicejet.com/VisaServices.aspx
+            - generic [ref=e2076]:
+              - img "sjlady" [ref=e2078]
+              - generic [ref=e2080]: Visa Services
+          - link "sjlady GST Invoice" [ref=e2081] [cursor=pointer]:
+            - /url: ""
+            - generic [ref=e2082]:
+              - img "sjlady" [ref=e2084]
+              - generic [ref=e2086]: GST Invoice
+      - link "Spin to Win" [ref=e2087] [cursor=pointer]:
+        - /url: ""
+        - generic [ref=e2089]:
+          - generic [ref=e2090]: Spin to Win
+          - generic [ref=e2091]:
+            - link:
+              - /url: ""
+      - generic [ref=e2094]:
+        - generic [ref=e2096]: Irresistible Deals
+        - generic [ref=e2097]:
+          - generic [ref=e2099]:
+            - generic [ref=e2100]: SpiceMax
+            - generic [ref=e2101]: The best seat in the sky at
+            - generic [ref=e2104]: 30% Off
+            - generic [ref=e2108]: SMAX30
+            - generic [ref=e2109]: Valid till:September 30, 2026
+          - generic [ref=e2111]:
+            - generic [ref=e2112]: Enjoy ADDONS at
+            - generic [ref=e2113]: Upto
+            - generic [ref=e2116]: 25% Off
+            - generic [ref=e2120]: ADDON25
+            - generic [ref=e2121]: Valid till:September 30, 2026
+        - generic [ref=e2123] [cursor=pointer]:
+          - generic: Explore More
+      - generic [ref=e2124]:
+        - generic [ref=e2126]: Recommended Add-Ons
+        - generic [ref=e2130]:
+          - link "SpiceMax Upgrade your flying experience with more space and a host of convenient services and priority privileges." [ref=e2132] [cursor=pointer]:
+            - /url: https://corporate.spicejet.com/spiceMax.aspx
+            - generic [ref=e2133]:
+              - generic [ref=e2137]: SpiceMax
+              - generic [ref=e2138]: Upgrade your flying experience with more space and a host of convenient services and priority privileges.
+          - link "SpiceCafé Pamper your taste buds with our variety of delicious hot meals and sandwiches." [ref=e2140] [cursor=pointer]:
+            - /url: https://corporate.spicejet.com/spiceCafe.aspx
+            - generic [ref=e2141]:
+              - generic [ref=e2145]: SpiceCafé
+              - generic [ref=e2146]: Pamper your taste buds with our variety of delicious hot meals and sandwiches.
+          - link "Excess Baggage Avoid last-minute baggage hassles at the airport by pre-booking your excess baggage now and save up to 10%!" [ref=e2148] [cursor=pointer]:
+            - /url: https://corporate.spicejet.com/ExcessBaggage.aspx
+            - generic [ref=e2149]:
+              - generic [ref=e2153]: Excess Baggage
+              - generic [ref=e2154]: Avoid last-minute baggage hassles at the airport by pre-booking your excess baggage now and save up to 10%!
+          - link "You1st Enjoy Priority Check-in, Boarding & Baggage Delivery for just ₹595/₹699 (Domestic/International)!" [ref=e2156] [cursor=pointer]:
+            - /url: https://corporate.spicejet.com/YouFirst.aspx
+            - generic [ref=e2157]:
+              - generic [ref=e2162]: You1st
+              - generic [ref=e2163]: Enjoy Priority Check-in, Boarding & Baggage Delivery for just ₹595/₹699 (Domestic/International)!
+          - link "Extra Seat Enjoy added privacy, extra space, and up to 10kg additional baggage allowance with an extra seat or row!" [ref=e2165] [cursor=pointer]:
+            - /url: https://corporate.spicejet.com/ExtraSeat.aspx
+            - generic [ref=e2166]:
+              - generic [ref=e2170]: Extra Seat
+              - generic [ref=e2171]: Enjoy added privacy, extra space, and up to 10kg additional baggage allowance with an extra seat or row!
+          - link "SpicePlus Enjoy priority services with a meal and beverage at ₹500. Add your preferred seat for an extra cost." [ref=e2173] [cursor=pointer]:
+            - /url: https://corporate.spicejet.com/spicePlus.aspx
+            - generic [ref=e2174]:
+              - generic [ref=e2178]: SpicePlus
+              - generic [ref=e2179]: Enjoy priority services with a meal and beverage at ₹500. Add your preferred seat for an extra cost.
+      - generic [ref=e2182]:
+        - generic [ref=e2184]: Tailor-made For You
+        - generic [ref=e2185]:
+          - link "Group Bookings Quick responses, effortless tracking, and a seamless booking journey." [ref=e2187] [cursor=pointer]:
+            - /url: https://groups.spicejet.com/
+            - generic [ref=e2188]:
+              - generic [ref=e2189]: Group Bookings
+              - generic [ref=e2190]: Quick responses, effortless tracking, and a seamless booking journey.
+          - link "SME High Flyer Exclusive fares, flexible changes & premium perks for small and medium enterprises." [ref=e2192] [cursor=pointer]:
+            - /url: https://sme.spicejet.com/Account/Login?ReturnUrl=%2FHome%2FLandingPage
+            - generic [ref=e2193]:
+              - generic [ref=e2194]: SME High Flyer
+              - generic [ref=e2195]: Exclusive fares, flexible changes & premium perks for small and medium enterprises.
+          - link "Corporate Traveller Customised travel solutions for business professionals." [ref=e2197] [cursor=pointer]:
+            - /url: https://corporate.spicejet.com/CorporateQueries.aspx
+            - generic [ref=e2198]:
+              - generic [ref=e2199]: Corporate Traveller
+              - generic [ref=e2200]: Customised travel solutions for business professionals.
+      - generic [ref=e2202]:
+        - generic [ref=e2203]:
+          - generic [ref=e2205]: SpiceClub Loyalty Program
+          - generic [ref=e2206]:
+            - generic [ref=e2209]: Join our frequent flyer program and enjoy unmatched rewards, added comforts and exclusive privileges.
+            - link "Know More" [ref=e2210] [cursor=pointer]:
+              - /url: https://spiceclub.spicejet.com/
+              - generic [ref=e2212]: Know More
+        - generic [ref=e2213]:
+          - generic [ref=e2214]:
+            - generic [ref=e2215]: As a member you get access to
+            - generic [ref=e2216]:
+              - generic [ref=e2219]:
+                - generic [ref=e2220]: Free
+                - generic [ref=e2221]: Flight Vouchers
+              - generic [ref=e2225]:
+                - generic [ref=e2226]: Earn
+                - generic [ref=e2227]: SC Points
+              - generic [ref=e2231]:
+                - generic [ref=e2232]: Complimentary
+                - generic [ref=e2233]: Upgrades
+          - link "Join SpiceClub" [ref=e2239] [cursor=pointer]:
+            - /url: https://spiceclub.spicejet.com/signup
+      - generic [ref=e2242]:
+        - generic [ref=e2247]:
+          - generic [ref=e2249]: Cargo
+          - generic [ref=e2250]: Small, Medium, Large & X-Large
+          - generic [ref=e2251]: Get your cargo shipped from one place to another at a convenient and cost-effective manner.
+          - generic [ref=e2253] [cursor=pointer]:
+            - generic: Book Now!
+        - generic [ref=e2258]:
+          - generic [ref=e2260]: Charter
+          - generic [ref=e2261]: Your private space in the sky
+          - generic [ref=e2262]: Now book a private charter for small groups or big.
+          - generic [ref=e2264] [cursor=pointer]:
+            - generic: Book Now!
+    - generic [ref=e2266]:
+      - generic [ref=e2267]:
+        - generic [ref=e2269]:
+          - generic [ref=e2270]:
+            - generic [ref=e2271]: About Us
+            - generic [ref=e2274]:
+              - link "Spice Route Magazine" [ref=e2276] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/SpiceRoute.aspx
+                - generic [ref=e2278]: Spice Route Magazine
+              - link "Corporate Overview" [ref=e2280] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/CorporateOverview.aspx
+                - generic [ref=e2282]: Corporate Overview
+              - link "Fleet" [ref=e2284] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/Fleet.aspx
+                - generic [ref=e2286]: Fleet
+              - link "Careers" [ref=e2288] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/careers.aspx
+                - generic [ref=e2290]: Careers
+              - link "Media Center" [ref=e2292] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/PressReleaseNews.aspx
+                - generic [ref=e2294]: Media Center
+              - link "Awards and Applaud" [ref=e2296] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/AwardsandApplaud.aspx
+                - generic [ref=e2298]: Awards and Applaud
+          - generic [ref=e2299]:
+            - generic [ref=e2300]: Contact Us
+            - generic [ref=e2303]:
+              - link "Airports" [ref=e2305] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/Airports.aspx
+                - generic [ref=e2307]: Airports
+              - link "International Offices" [ref=e2309] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/InternationalOffices.aspx
+                - generic [ref=e2311]: International Offices
+              - link "Corporate Head Office" [ref=e2313] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/ContactUs.aspx
+                - generic [ref=e2315]: Corporate Head Office
+              - link "Advertise with Us" [ref=e2317] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/MediaSale.aspx
+                - generic [ref=e2319]: Advertise with Us
+              - link "RFP" [ref=e2321] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/Content/pdf/GSA-RFP.pdf
+                - generic [ref=e2323]: RFP
+          - generic [ref=e2324]:
+            - generic [ref=e2325]: Travel Info
+            - generic [ref=e2328]:
+              - link "Citizen's Charter" [ref=e2330] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/Charter.aspx
+                - generic [ref=e2332]: Citizen's Charter
+              - link "FAQ" [ref=e2334] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/GeneralAirTravelFaq.aspx
+                - generic [ref=e2336]: FAQ
+              - link "Fitness To Fly Guideline" [ref=e2338] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/Content/pdf/FitnessFlyGuidelines.pdf
+                - generic [ref=e2340]: Fitness To Fly Guideline
+              - link "Flight Schedules" [ref=e2342] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/Schedules.aspx
+                - generic [ref=e2344]: Flight Schedules
+              - link "Terms of Carriage" [ref=e2346] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/Tnc.aspx
+                - generic [ref=e2348]: Terms of Carriage
+              - link "Fees and Charges" [ref=e2350] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/FeesCharges.aspx
+                - generic [ref=e2352]: Fees and Charges
+              - link "Know Your Rights" [ref=e2354] [cursor=pointer]:
+                - /url: https://www.civilaviation.gov.in/ministry-documents/passenger-charter-of-rights
+                - generic [ref=e2356]: Know Your Rights
+              - link "Book Any Test From Any Lab" [ref=e2358] [cursor=pointer]:
+                - /url: http://flebo.in/
+                - generic [ref=e2360]: Book Any Test From Any Lab
+              - link "Book Any Test From Any Lab in Delhi" [ref=e2362] [cursor=pointer]:
+                - /url: https://flebo.in/health/delhi/
+                - generic [ref=e2364]: Book Any Test From Any Lab in Delhi
+          - generic [ref=e2365]:
+            - generic [ref=e2366]: Investors
+            - generic [ref=e2369]:
+              - link "Corporate Governance" [ref=e2371] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/InvestorsCorporateGovernance.aspx
+                - generic [ref=e2373]: Corporate Governance
+              - link "Financial Information" [ref=e2375] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/InvestorsFinancialInformation.aspx
+                - generic [ref=e2377]: Financial Information
+              - link "Notices" [ref=e2379] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/InvestorsNotices.aspx
+                - generic [ref=e2381]: Notices
+              - link "Corporate Announcements" [ref=e2383] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/InvestorCorporateAnnouncements.aspx
+                - generic [ref=e2385]: Corporate Announcements
+              - link "Shareholding Pattern" [ref=e2387] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/InvestorsShareholdingPattern.aspx
+                - generic [ref=e2389]: Shareholding Pattern
+              - link "Investor Services" [ref=e2391] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/InvestorServices.aspx
+                - generic [ref=e2393]: Investor Services
+              - link "Disclosure Regulation 46" [ref=e2395] [cursor=pointer]:
+                - /url: https://corporate.spicejet.com/Regulation46.aspx
+                - generic [ref=e2397]: Disclosure Regulation 46
+        - generic [ref=e2398]:
+          - generic [ref=e2400]:
+            - generic [ref=e2401]: "For Reservations or Customer Support:"
+            - generic [ref=e2402]:
+              - generic [ref=e2403]:
+                - generic [ref=e2404]: 📞
+                - generic [ref=e2405]: +91 (0)124 4983410 / +91 (0)124 7101600
+              - generic [ref=e2406]:
+                - generic [ref=e2407]: 📧
+                - link "custrelations@spicejet.com" [ref=e2409] [cursor=pointer]:
+                  - /url: mailto:custrelations@spicejet.com
+          - generic [ref=e2410]:
+            - generic [ref=e2411]: Follow us
+            - link [ref=e2412] [cursor=pointer]:
+              - /url: https://www.facebook.com/FlySpiceJet/
+            - link [ref=e2415] [cursor=pointer]:
+              - /url: https://twitter.com/flyspicejet
+            - link [ref=e2418] [cursor=pointer]:
+              - /url: "https://www.linkedin.com/company/spicejet-limited/ "
+            - link [ref=e2421] [cursor=pointer]:
+              - /url: https://www.instagram.com/spicejetairlines/?hl=en
+            - link [ref=e2424] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UCldnpuM5Q-y11XGNpfh3k-A
+          - generic [ref=e2427]:
+            - generic [ref=e2429]: Download our mobile app
+            - generic [ref=e2430]:
+              - link [ref=e2431] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.vl.spicejet&hl=en
+              - link [ref=e2434] [cursor=pointer]:
+                - /url: https://itunes.apple.com/us/app/spicejet/id998319513?mt=8
+      - generic [ref=e2437]:
+        - generic [ref=e2438]: "Note:"
+        - generic [ref=e2439]: We log the IP addresses of the visitors on our website for security reasons.
+      - generic [ref=e2442]:
+        - generic [ref=e2443]:
+          - generic [ref=e2461]: © Copyright Spicejet India. All Rights Reserved
+          - generic [ref=e2462]: "Registered Office: SpiceJet Ltd, 319, Udyog Vihar, Phase IV, Gurgaon, Haryana - 122016"
+        - generic [ref=e2463]:
+          - generic [ref=e2466] [cursor=pointer]: Home
+          - generic [ref=e2467]:
+            - generic [ref=e2468]: •
+            - link "Privacy Policy" [ref=e2469] [cursor=pointer]:
+              - /url: https://corporate.spicejet.com/PrivacyPolicy.aspx
+          - generic [ref=e2470]:
+            - generic [ref=e2471]: •
+            - link "Disclaimer" [ref=e2472] [cursor=pointer]:
+              - /url: "https://corporate.spicejet.com/Disclaimer.aspx "
+          - generic [ref=e2473]:
+            - generic [ref=e2474]: •
+            - link "GST Information" [ref=e2475] [cursor=pointer]:
+              - /url: https://corporate.spicejet.com/GstInformation.aspx
+          - generic [ref=e2476]:
+            - generic [ref=e2477]: •
+            - link "Sitemap" [ref=e2478] [cursor=pointer]:
+              - /url: https://corporate.spicejet.com/Sitemap.aspx
+  - generic [ref=e2481]: Family and Friends discount is applicable for a minimum of 2 passengers (excluding infant) on a single booking. Terms and conditions apply.
+  - generic [ref=e2485]: The special discounted fares are applicable to senior citizens, above the age of 60 years. To travel under this fare, the passenger must present a valid age proof at the SpiceJet check-in counter at the airport.
+  - generic [ref=e2489]: Children between the ages of 5 and 12 travelling alone are considered unaccompanied minors. Charges per minor for each domestic sector are INR 4999, and charges vary for each international sector, starting at INR 9999. This can be bought until 2hrs/3hrs (domestic/international) prior to departure. After booking, please fill out the Unaccompanied Minor Form and carry four printed copies to the airport.
+  - generic [ref=e2493]: Applicable for all students above the age of 12 years studying with a bonafide school/university. Limited inventory available. Valid photo ID and educational institute I-card need to be presented for verification at check-in. Bookings under this offer are refundable. Conditions apply.
+  - generic [ref=e2497]: Applicable for all serving and retired Indian Armed Forces personnel, Paramilitary Forces personnel and their dependent families. Limited inventory available. Valid photo ID and relevant military card need to be presented for verification at check-in. Conditions apply.
+  - generic [ref=e2501]: The fares are extended only to government officials for their official travel (those carrying a valid identity card). A valid identity card issued by the employer is a pre-requisite for travel under this offer and passengers will be required to produce the card at the SpiceJet check-in counter at the airport.
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect } from '@playwright/test'
+  2  | 
+  3  | test('verify Drop down selection', async ({ page }) => {
+  4  | 
+  5  |     await page.goto("https://www.spicejet.com/");
+  6  |     await page.getByTestId("to-testID-origin").click();
+  7  |     await page.getByTestId("to-testID-origin").getByRole("textbox").fill("De");
+  8  |     await page.locator("//div[@class='css-1dbjc4n r-19yat4t r-1rt2jqs']").filter({hasText:"Delhi"}).click();
+  9  |     await page.getByTestId("to-testID-destination").click();
+  10 |     await page.getByTestId("to-testID-destination").getByRole("textbox").fill("Ben");
+> 11 |     await page.locator("//div[@class='css-1dbjc4n r-19yat4t r-1rt2jqs']").filter({hasText:"Bengaluru"}).first().click();
+     |                                                                                                                 ^ Error: locator.click: Test timeout of 30000ms exceeded.
+  12 | 
+  13 | });
+```

@@ -1,0 +1,22 @@
+6
+3
+[ 'Google' ]
+[ 'Maria Anders' ]
+[ 'Germany' ]
+[ 'Meta' ]
+[ 'Francisco Chang' ]
+[ 'Mexico' ]
+[ 'Microsoft' ]
+[ 'Roland Mendel' ]
+[ 'Austria' ]
+[ 'Island Trading' ]
+[ 'Helen Bennett' ]
+[ 'UK' ]
+[ 'Adobe' ]
+[ 'Yoshi Tannamuri' ]
+text match
+locator('//table[@id=\'companies-table\']/tbody/tr[5]/td[2]/following-sibling::td')
+[ 'Canada' ]
+[ 'Amazon' ]
+[ 'Giovanni Rovelli' ]
+[ 'Italy' ]

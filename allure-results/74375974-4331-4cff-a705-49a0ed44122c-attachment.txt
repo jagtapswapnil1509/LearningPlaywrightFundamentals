@@ -1,0 +1,20 @@
+each menu= 🚖
+Taxi
+🏨
+Hotel
+🛡️
+Insurance
+🍽️
+Meal
+📶
+Wi-Fi
+🎟️
+Activities
+each menu= 
+                    🚖Taxi
+                    🏨Hotel
+                    🛡️Insurance
+                    🍽️Meal
+                    📶Wi-Fi
+                    🎟️Activities
+                  
