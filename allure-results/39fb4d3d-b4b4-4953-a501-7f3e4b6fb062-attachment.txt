@@ -1,0 +1,2 @@
+Fast and reliable end-to-end testing for modern web apps | Playwright
+SDET Blueprint - Master Playwright, Selenium & AI Testing in 100 Days
