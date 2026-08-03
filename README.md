@@ -9,9 +9,11 @@ The examples in this repository are organized by topic and include:
 - browser context and page configuration
 - locator strategies and common commands
 - assertions and waits
+- generic `expect` assertions (`toBe`, `toEqual`, `toBeTruthy`, `toBeGreaterThan`, etc.) and polling with `expect.poll`
 - handling alerts, frames, and shadow DOM
 - file upload and download scenarios
 - keyboard, hover, drag-and-drop interactions
+- scrolling elements into view and handling lazy-loaded content
 - web tables and dynamic content
 - reporting with Playwright and custom HTML reporting
 
@@ -98,6 +100,8 @@ This generates reports under the `tta-report/` folder.
 │   ├── 21_Fixture/
 │   ├── 22_Misc_Concepts/
 │   ├── 23_Advance_Framework/
+│   ├── PlaywrightCodePractice/
+│   ├── Practice/
 │   └── Projects/
 ├── playwright.config.ts
 ├── package.json
