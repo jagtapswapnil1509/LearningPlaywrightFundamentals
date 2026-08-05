@@ -10,6 +10,8 @@ The examples in this repository are organized by topic and include:
 - locator strategies and common commands
 - assertions and waits
 - generic `expect` assertions (`toBe`, `toEqual`, `toBeTruthy`, `toBeGreaterThan`, etc.) and polling with `expect.poll`
+- web-first locator assertions (`toBeVisible`, `toContainText`, `toHaveAttribute`, `toHaveCount`, `toBeChecked`, `toBeEnabled`) and soft assertions with `expect.soft`
+- test hooks and annotations: `beforeEach`/`afterEach`/`beforeAll`/`afterAll`, `test.skip`/`slow`/`fixme`/`fail`, `test.step`, `describe.serial`, and tag-based filtering with `--grep`
 - handling alerts, frames, and shadow DOM
 - file upload and download scenarios
 - keyboard, hover, drag-and-drop interactions
@@ -44,6 +46,12 @@ Run a specific test file:
 
 ```bash
 npx playwright test tests/11_JS_Alerts/270_Jsalert.spec.ts
+```
+
+Run tests by tag:
+
+```bash
+npx playwright test --grep @smoke
 ```
 
 This repository also includes practice and learning examples for alerts, frames, keyboard interactions, file upload/download flows, and custom reporting.
