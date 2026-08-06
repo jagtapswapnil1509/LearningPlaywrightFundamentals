@@ -4,6 +4,17 @@ This repository is a hands-on Playwright learning project built with TypeScript.
 
 ## Latest Updates (2026-08-06)
 
+### Chapter 3 — Locators & Commands
+Added a new practice test file for locator strategies:
+- `03_Locators_Commands.spec.ts` — Task 3.1: locating the username field three different ways (by id, by `getByRole`, and by CSS attribute selector), filling values, and asserting with `toHaveValue`
+
+### Updated Test Reports
+- Refreshed `tta-report` and `allure-results` with latest test run outputs
+
+---
+
+## Previous Updates (2026-08-06)
+
 ### Chapter 19 — Data-Driven Testing
 Added DDT examples reading from multiple formats:
 - `291_DDT.spec.ts` — basic inline array-driven test
