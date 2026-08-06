@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Swapnil",
+    "experience": 10,
+    "isTrainer": true,
+    "middleName": "",
+    "skills": [
+      "JavaScript",
+      "Playwright",
+      "Selenium"
+    ],
+    "address": {
+      "city": "Pune",
+      "country": "India"
+    }
+  }
+]

@@ -1,0 +1,10 @@
+# Taste
+- Keep the parent README in sync with code changes (coverage/feature list and runnable command examples) as part of the same commit. Confidence: 0.7
+- After committing, push directly to `main` on the origin remote. Confidence: 0.65
+- Commit only source code and docs; leave generated test-run artifacts (e.g. `allure-results/`, report outputs, `out/`) uncommitted. Confidence: 0.75
+- Commit messages use a short imperative summary line followed by a bulleted body describing each change group. Confidence: 0.7
+- Works on Windows where the default shell is cmd.exe (no heredoc support); use PowerShell here-strings piped to `git commit -F -` for multi-line commit messages. Confidence: 0.8
+- Playwright Test project in TypeScript configured as ESM (`module: ESNext`, `resolveJsonModule: true`); write `import` statements (including JSON imports), never CommonJS `require`. Confidence: 0.7
+- The Node.js version in this environment requires an import attribute on JSON imports: `import data from './file.json' with { type: 'json' };` — plain JSON imports fail at runtime. Confidence: 0.85
+- Run Playwright tests in headed mode (`npx playwright test <spec> --headed`) when asked to run a test — the user wants to watch the browser execute. Confidence: 0.85
+- Run standalone TypeScript scripts (non-spec files) directly with `npx tsx <file>` when the user asks to execute them. Confidence: 0.65

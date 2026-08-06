@@ -11,8 +11,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.61.1",
-    "@types/node": "^26.1.0",
-    "allure-playwright": "^3.10.2"
+    "@playwright/test": "^1.62.1",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^26.1.2",
+    "allure-playwright": "^3.10.2",
+    "js-yaml": "^5.2.3",
+    "xlsx": "^0.18.5"
   }
 }

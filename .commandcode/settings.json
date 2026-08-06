@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(git:*)",
+      "Shell(git commit -F - <<'EOF' Add test hooks chapter, extend expect assertions, update README - 18_Test_hooks: annotations (skip/slow/fixme/fail), test.step, hooks, describe.serial, and tag-based priority examples with cheatsheets - 17_Expect_Assertions: locator assertions, soft assertions, element state assertions, and cheatsheet - README: document web-first/soft assertions, hooks/annotations, and --grep tag filtering Co-authored-by: CommandCodeBot <noreply@commandcode.ai> EOF)",
+      "powershell"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}

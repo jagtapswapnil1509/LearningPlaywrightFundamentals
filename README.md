@@ -2,6 +2,36 @@
 
 This repository is a hands-on Playwright learning project built with TypeScript. It contains a growing set of end-to-end test examples that cover the core concepts of browser automation, element interaction, assertions, and reporting.
 
+## Latest Updates (2026-08-06)
+
+### Chapter 19 — Data-Driven Testing
+Added DDT examples reading from multiple formats:
+- `291_DDT.spec.ts` — basic inline array-driven test
+- `294_LoginTest.spec.ts` — login DDT with JSON data
+- `295_Read_Write_Filesystem.ts` — filesystem read/write utility
+- `296_DDT_JsonArray.spec.ts` — inline JSON array data source
+- `297_DDT_CSV.spec.ts` — CSV-based DDT with `csvReader` utility
+- `298_DDT_JSON.spec.ts` — external JSON file-driven DDT
+- `299_DDT_YAML.spec.ts` — YAML-based DDT with `yamlReader` utility (js-yaml)
+- `300_DDT_XLSX.spec.ts` — Excel-based DDT with `xlsxReader` utility (xlsx)
+- `301_DDT_TSV.spec.ts` — TSV-based DDT with `tsvReader` utility
+
+### New Utilities (`util/`)
+| File | Description |
+|------|-------------|
+| `csvReader.ts` | Reads CSV test data into typed arrays |
+| `yamlReader.ts` | Reads YAML test data (requires `js-yaml`) |
+| `xlsxReader.ts` | Reads Excel test data (requires `xlsx`) |
+| `tsvReader.ts` | Reads TSV test data |
+
+### New Test Data (`test-data/`)
+- `login-data.csv`, `login-data.yaml`, `login-data.tsv`, `login-data.xlsx`
+- `registration-data.json`, `login.json`
+
+### Dev Tools
+- Added `go-go-go` skill (`.commandcode/skills/go-go-go/SKILL.md`) — one-command README-update, commit, and push workflow
+- Updated `package.json` with `js-yaml`, `xlsx`, and `@types/js-yaml` dependencies
+
 ## What this project covers
 
 The examples in this repository are organized by topic and include:
