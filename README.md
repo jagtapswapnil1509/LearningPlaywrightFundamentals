@@ -2,7 +2,20 @@
 
 This repository is a hands-on Playwright learning project built with TypeScript. It contains a growing set of end-to-end test examples that cover the core concepts of browser automation, element interaction, assertions, and reporting.
 
-## Latest Updates (2026-08-06)
+## Latest Updates (2026-08-07)
+
+### Chapter 19 — FakerJS Data-Driven Testing
+Added DDT examples using `@faker-js/faker` to generate dynamic test data:
+- `302_DDT_fakerJS1.spec.ts` — basic FakerJS integration generating dynamic user data for registration
+- `303_DDT_FakerJsAdvance.spec.ts` — advanced FakerJS with a reusable `generateuser()` helper function
+- `304_DDT_fakerJS2.spec.ts` — FakerJS loop-driven test generating 5 users across multiple email domains
+
+### Updated Test Reports
+- Refreshed `tta-report` and `allure-results` with latest test run outputs
+
+---
+
+## Previous Updates (2026-08-06)
 
 ### Chapter 3 — Locators & Commands
 Added a new practice test file for locator strategies:
