@@ -4,6 +4,22 @@ This repository is a hands-on Playwright learning project built with TypeScript.
 
 ## Latest Updates (2026-08-07)
 
+### Chapter 20 — Page Object Model
+Added POM pattern examples for the Sauce Demo login and inventory pages:
+- `LoginPage.ts` — login page object with selector-based locators
+- `LoginPageSnapLocator.ts` — login page object using Playwright's snap (property) locator pattern
+- `inventory.ts` — inventory page object for product listing interactions
+- `305_No_POM.spec.ts` — DDT login test without POM (baseline comparison)
+- `306_POM.spec.ts` — login test using POM with FakerJS-generated credentials
+- `POM_Inventory.spec.ts` — inventory validation test composing LoginPage + InventoryPage
+
+### Updated Test Reports
+- Refreshed `tta-report` and `allure-results` with latest test run outputs
+
+---
+
+## Previous Updates (2026-08-07)
+
 ### Chapter 19 — FakerJS Data-Driven Testing
 Added DDT examples using `@faker-js/faker` to generate dynamic test data:
 - `302_DDT_fakerJS1.spec.ts` — basic FakerJS integration generating dynamic user data for registration
